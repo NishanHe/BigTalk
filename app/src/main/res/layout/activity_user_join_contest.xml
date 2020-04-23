@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_join_contest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.bigtalk.bigtalk.contest.UserJoinContestActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/join_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="" />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_con_title"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="@color/base_color_text_black" />-->
+
+
+    <TextView
+        android:id="@+id/tv_con_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/join_toolbar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp" />
+
+        <!--<Button-->
+            <!--android:text="@string/topic_intro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:id="@+id/btn_intro"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/button_press"-->
+            <!--android:textColor="@color/base_color_text_white"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignTop="@+id/tv_con_title"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="30dp" />-->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_intro"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="12sp"
+        android:textColor="@color/base_color_text_black"
+        android:layout_alignTop="@+id/tv_con_time"
+        android:layout_marginRight="30dp"
+        android:layout_height="58dp" />
+
+
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="20dp"
+                app:srcCompat="@drawable/positi"
+                android:id="@+id/imageView11"
+                android:layout_alignTop="@+id/tv_posiseatLeft"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_posi"
+                android:layout_alignLeft="@+id/imageView11"
+                android:layout_marginLeft="30dp"
+                android:layout_alignTop="@+id/tv_posiseatLeft"
+                android:layout_marginTop="35dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tv_negaseatLeft"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/negati" />
+
+    <TextView
+        android:id="@+id/tv_nega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView12"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignTop="@+id/tv_negaseatLeft"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp" />
+
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_posiseatLeft"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+        android:layout_alignTop="@+id/tv_intro" />
+
+    <TextView
+        android:id="@+id/tv_negaseatLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="false"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp" />
+
+    <ImageView
+        android:id="@+id/iv_user1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tv_posi"
+        android:layout_alignTop="@+id/tv_posi"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user1"
+        android:layout_alignTop="@+id/iv_user1"
+        android:layout_alignStart="@+id/tv_posi"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="10sp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_user2"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@+id/tv_posi"
+        android:layout_alignStart="@+id/iv_user1"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user2"
+        android:layout_alignTop="@+id/iv_user2"
+        android:layout_alignStart="@+id/tv_user1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="10sp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/iv_user3"
+        android:layout_alignTop="@+id/tv_posi"
+        android:layout_alignStart="@+id/iv_user2"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_user3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_user2"
+        android:layout_alignTop="@+id/iv_user3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:textSize="10sp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/iv_user4"
+        android:layout_alignTop="@+id/tv_posi"
+        android:layout_alignStart="@+id/iv_user3"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user4"
+        android:layout_alignTop="@+id/iv_user4"
+        android:layout_alignStart="@+id/tv_user3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="10sp"/>
+
+
+    <!--<ListView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/lv_posidebater"-->
+                <!--android:layout_alignTop="@+id/tv_posiseatLeft"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginTop="150dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="200dp">-->
+
+            <!--</ListView>-->
+            <!--<ListView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/lv_negadebater"-->
+                <!--android:layout_alignTop="@+id/tv_negaseatLeft"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="150dp"-->
+                <!--android:layout_alignLeft="@+id/lv_posidebater"-->
+                <!--android:layout_marginLeft="200dp">-->
+
+            <!--</ListView>-->
+
+    <!--<com.example.bigtalk.bigtalk.contest.HorizontalListView-->
+        <!--android:id="@+id/horizontallistview1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--/>-->
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_user5"
+        android:layout_alignTop="@+id/tv_nega"
+        android:layout_alignStart="@+id/tv_nega"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user5"
+        android:layout_alignTop="@+id/iv_user5"
+        android:layout_alignStart="@+id/tv_posi"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="10sp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/iv_user6"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@+id/tv_nega"
+        android:layout_alignStart="@+id/iv_user5"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user6"
+        android:layout_alignTop="@+id/iv_user6"
+        android:layout_alignStart="@+id/tv_user5"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="10sp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/iv_user7"
+        android:layout_alignTop="@+id/tv_nega"
+        android:layout_alignStart="@+id/iv_user6"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_user7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_user6"
+        android:layout_alignTop="@+id/iv_user7"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:textSize="10sp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/iv_user8"
+        android:layout_alignTop="@+id/tv_nega"
+        android:layout_alignStart="@+id/iv_user7"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user8"
+        android:layout_alignTop="@+id/iv_user8"
+        android:layout_alignStart="@+id/tv_user7"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="10sp"/>
+
+
+
+
+</RelativeLayout>

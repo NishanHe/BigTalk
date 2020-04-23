@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.myspace.VChooseFieldActivity">
+
+    <include layout="@layout/include_navi"/>
+    <TextView
+        android:id="@+id/v_field_text_field_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_society"
+        android:text="选择达人领域" />
+
+    <Button
+        android:id="@+id/v_field_btn_society"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_entertain"
+        android:text="@string/v_field_btn_society" />
+
+    <Button
+        android:id="@+id/v_field_btn_entertain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_science"
+        android:text="@string/v_field_btn_entertain" />
+
+    <Button
+        android:id="@+id/v_field_btn_science"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_computer"
+        android:text="@string/v_field_btn_science" />
+
+    <Button
+        android:id="@+id/v_field_btn_computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_humanity"
+        android:text="@string/v_field_btn_computer" />
+
+    <Button
+        android:id="@+id/v_field_btn_humanity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v_field_btn_humanity" />
+
+    <TextView
+        android:id="@+id/v_field_text_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_debater"
+        android:text="选择达人身份" />
+
+    <Button
+        android:id="@+id/v_field_btn_debater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v_field_btn_debater" />
+
+    <Button
+        android:id="@+id/v_field_btn_critic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/v_field_btn_summit"
+        android:text="@string/v_field_btn_critic" />
+
+    <Button
+        android:id="@+id/v_field_btn_summit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_submit" />
+
+</RelativeLayout>

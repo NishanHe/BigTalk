@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_watch_contest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.contest.WatchContestActivity"
+    android:background="@color/cardview_light_background"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/base_color_text_black" />
+
+
+    <ImageView
+        app:srcCompat="@drawable/positi"
+        android:id="@+id/imageView"
+        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_alignStart="@+id/label_posi"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/label_posi"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_posi"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_posi"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@+id/label_posi"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="@string/label_nega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_nega"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/negati"
+        android:id="@+id/imageView2"
+        android:layout_marginEnd="30dp"
+        android:layout_width="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignTop="@+id/tv_title"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nega"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/label_nega"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignRight="@+id/imageView2" />
+
+    <ImageView
+        app:srcCompat="@drawable/con1"
+        android:id="@+id/imageView3"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="left"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/label_posi"
+        android:layout_marginStart="30dp"
+        android:layout_width="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/con2"
+        android:id="@+id/imageView4"
+        android:layout_gravity="end"
+        android:layout_alignTop="@+id/label_nega"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="@string/btn_posi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/label_posi_1"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="@string/label_nega_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/label_nega_1"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_weight="0.01"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/con3"
+        android:id="@+id/imageView5"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/label_posi_1"
+        android:layout_marginStart="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/con4"
+        android:layout_marginTop="35dp"
+        android:id="@+id/imageView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/label_nega_1"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="@string/btn_posi2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_posi_2"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_countDown"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/iv_current"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="150dp" />
+
+    <TextView
+        android:text="@string/btn_nega2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_nega_2"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/con5"
+        android:layout_marginTop="35dp"
+        android:id="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/label_posi_2"
+        android:layout_marginStart="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/con6"
+        android:layout_marginTop="35dp"
+        android:id="@+id/imageView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/label_nega_2"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="@string/btn_posi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/label_posi_3"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="@string/btn_nega3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/label_nega_3"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/con7"
+        android:id="@+id/imageView9"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/label_posi_3"
+        android:layout_marginStart="30dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/con8"
+        android:id="@+id/imageView10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_alignTop="@+id/label_nega_3"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="@string/btn_posi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_posi_4"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="@string/btn_nega4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_nega_4"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:layout_weight="0.01"
+        android:gravity="right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_marginEnd="30dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_current"
+        android:layout_alignBottom="@+id/label_posi_3"
+        android:layout_toEndOf="@+id/label_posi_1"
+        android:layout_marginLeft="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/iv_current2"
+        android:layout_alignBottom="@+id/label_posi_3"
+        android:layout_toEndOf="@+id/label_posi_1"
+        android:layout_marginLeft="60dp"
+        android:layout_alignLeft="@+id/iv_current"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

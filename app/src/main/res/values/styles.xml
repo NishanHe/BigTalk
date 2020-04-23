@@ -1,0 +1,187 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/blueStatus</item>
+        <item name="colorPrimaryDark">@color/blueStatus</item>
+        <item name="colorAccent">@color/blueStatus</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="style_text_large" parent="style_smile">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="style_smile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="NormalTextView">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>
+
+    <style name="NormalGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>
+
+    <style name="SmallTextView">
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+    <style name="SmallGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="style_text" parent="style_smile">
+
+        <item name="android:textSize">@dimen/text_size_medium</item>
+
+    </style>
+
+    <style name="style_text_small" parent="style_smile">
+
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="style_text_middle" parent="style_smile">
+
+        <item name="android:textSize">@dimen/text_size_medium</item>
+
+    </style>
+
+
+
+    <style name="style_text_black" parent="style_text">
+
+        <item name="android:textColor">@color/base_color_text_black</item>
+
+    </style>
+    <style name="style_text_1e1e1e" parent="style_text">
+
+        <item name="android:textColor">@color/color_1e1e1e</item>
+
+    </style>
+    <style name="style_text_white" parent="style_text">
+
+        <item name="android:textColor">@color/base_color_text_white</item>
+
+    </style>
+
+    <style name="style_text_gray_small" parent="style_text_small">
+
+        <item name="android:textColor">@color/color_99</item>
+
+    </style>
+
+    <style name="style_text_white_small" parent="style_text_small">
+
+        <item name="android:textColor">@color/base_color_text_white</item>
+
+    </style>
+
+    <style name="chat_text_name_style">
+
+        <item name="android:textColor">#818181</item>
+
+        <item name="android:textSize">15sp</item>
+
+        <item name="android:gravity">center</item>
+
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+
+        <!--边框-->
+
+        <item name="android:windowIsFloating">true</item>
+
+        <!--是否浮现在activity之上-->
+
+        <item name="android:windowIsTranslucent">false</item>
+
+        <!--半透明-->
+
+        <item name="android:windowNoTitle">false</item>
+
+        <!--无标题-->
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!--背景透明-->
+
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <!--模糊-->
+
+    </style>
+
+
+    <style name="WinDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <style name="dialogFullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox" tools:targetApi="lollipop">
+        <item name="android:colorControlActivated">@color/colorAccent</item>
+        <item name="android:colorControlNormal">@color/grey</item>
+    </style>
+
+
+
+
+</resources>

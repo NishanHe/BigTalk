@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expert_vote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.contest.vote.ExpertVoteActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_contestTime"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_hint"
+        android:text="@string/hint_vote"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="@string/label_posi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_posi"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="@string/label_cri1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_cri1_posi"
+        android:layout_marginTop="10dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/posi_shenti"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="@string/label_cri2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_cri2_posi"
+        android:layout_marginTop="20dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/posi_lunzheng"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="@string/label_cri3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_cri3_posi"
+        android:layout_marginTop="20dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/posi_bianbo"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="@string/label_cri4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_cri4_posi"
+        android:layout_marginTop="20dp" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/posi_peihe"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="@string/label_cri5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri5_posi" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="0"
+        android:layout_marginTop="10dp"
+        android:id="@+id/posi_bianfeng" />
+
+    <TextView
+        android:text="@string/label_nega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_nega" />
+
+    <TextView
+        android:text="@string/label_cri1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri1_nega" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/nega_shenti" />
+    <TextView
+        android:text="@string/label_cri2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri2_nega" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/nega_lunzheng" />
+    <TextView
+        android:text="@string/label_cri3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri3_nega" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/nega_bianbo" />
+    <TextView
+        android:text="@string/label_cri4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri4_nega" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/nega_peihe" />
+    <TextView
+        android:text="@string/label_cri5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_cri5_nega" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:progress="0"
+        android:id="@+id/nega_bianfeng" />
+
+    <Button
+        android:text="@string/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_submit" />
+
+
+</LinearLayout>

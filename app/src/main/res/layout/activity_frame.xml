@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.FrameActivity">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <SearchView
+            android:id="@+id/front_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mHomeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_layout"
+        android:layout_above="@+id/bottomGroup">
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/height_message"
+        android:background="@color/color_line" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_front"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/frame_frontpage_selector"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_latest"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/frame_latest_selector"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_debate"
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/frame_debate_selector"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_train"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/frame_train_selector"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_my"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/frame_myspace_selector"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/bottomGroup"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioFront"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/ic_frontpage"-->
+            <!--android:gravity="center_vertical|center_horizontal|center"-->
+            <!--android:text="@string/rdo_front_label"-->
+            <!--tools:textColor="@color/colorPrimary" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioLatest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/ic_latest"-->
+            <!--android:gravity="center_vertical|center_horizontal|center"-->
+            <!--android:text="@string/rdo_latest_label"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioDebate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/ic_debate"-->
+            <!--android:gravity="center_vertical|center_horizontal|center"-->
+            <!--android:text="@string/rdo_debate_label"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioMy"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:checked="true"-->
+            <!--android:drawableTop="@drawable/ic_myspace"-->
+            <!--android:gravity="center_vertical|center_horizontal|center"-->
+            <!--android:text="@string/rdo_my_label"-->
+            <!--android:textColor="@color/colorPrimary" />-->
+    <!--</RadioGroup>-->
+
+
+
+
+    <!--<include layout="@layout/content_frame" />-->
+
+
+</RelativeLayout>

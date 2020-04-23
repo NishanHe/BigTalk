@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".train.TrainChoosePartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/train_part_progress1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progress_yellow"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="11dp" />
+
+        <TextView
+            android:id="@+id/train_progress1_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="@string/train_progress_topic"
+            android:textColor="@color/text_black_color"
+            app:layout_constraintStart_toEndOf="@+id/train_part_progress1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/train_part_progress_bar1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progress_line_black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="111dp" />
+
+        <ImageView
+            android:id="@+id/train_part_progress2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progress_yellow"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="148dp" />
+
+        <TextView
+            android:id="@+id/train_progress2_label"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="@string/train_progress_side"
+            android:textColor="@color/text_black_color"
+            app:layout_constraintStart_toEndOf="@+id/train_part_progress2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/train_part_progress_bar2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progress_line_black"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="236dp" />
+
+        <ImageView
+            android:id="@+id/train_part_progress3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/progress_grey"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="278dp" />
+
+        <TextView
+            android:id="@+id/train_progress3_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="@string/train_progress_part"
+            app:layout_constraintStart_toEndOf="@+id/train_part_progress3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/train_choose_part_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/train_choose_part_label"
+        android:textColor="@color/text_black_color"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/train_choose_part_topicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/textSize_title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/train_choose_part_btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_em2full_selector"
+            android:text="@string/train_choose_part_start"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+        <Button
+            android:id="@+id/train_choose_part_btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_em2full_selector"
+            android:text="@string/train_choose_part_end"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="264dp"
+            tools:layout_editor_absoluteY="235dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/train_choose_part_btn_sure"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_full_selector"
+        android:text="@string/btn_text_confirm"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="415dp" />
+</LinearLayout>

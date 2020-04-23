@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.myspace.MyFragment"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_navi"/>
+
+    <LinearLayout
+        android:id="@+id/myfile_layout_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|fill_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/myfile_img_avatar"
+            android:src="@drawable/myfile_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_marginStart="130dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myfile_layout_username"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myfile_img_username"
+            android:layout_weight="0.25"
+            app:srcCompat="@drawable/myfile_user"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_width="25dip"
+            android:layout_height="25dip" />
+
+        <EditText
+            android:id="@+id/myfile_edit_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/myfile_edit_username"
+            android:paddingBottom="7dp"
+            android:textColor="?attr/colorPrimary" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_myfile__line1"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myfile_layout_gender"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myfile_img_gender"
+            android:layout_weight="0.54"
+            app:srcCompat="@drawable/myfile_gender"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:paddingEnd="8dp"
+            android:layout_gravity="center_vertical" />
+
+        <RadioButton
+            android:id="@+id/myfile_rbtn_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/myfile_rbtn_gender_f"
+            android:button="@drawable/radio_button_style"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical" />
+
+        <RadioButton
+            android:id="@+id/myfile_rbtn_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/myfile_rbtn_gender_m"
+            android:button="@drawable/radio_button_style"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_myfile__line2"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myfile_layout_field"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myfile_img_field"
+            android:layout_weight="0.26"
+            app:srcCompat="@drawable/myfile_field"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dip"
+            android:layout_height="25dip" />
+
+        <EditText
+            android:id="@+id/myfile_edit_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/myfile_edit_field"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_myfile__line3"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myfile_layout_signature"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myfile_img_signature"
+            android:layout_height="@dimen/height_40"
+            app:srcCompat="@drawable/myfile_signature"
+            android:layout_width="20dip"
+            android:layout_marginStart="35dp" />
+
+        <EditText
+            android:id="@+id/myfile_edit_signature"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/myfile_edit_signature"
+            android:layout_marginStart="28dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_myfile__line4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myfile_layout_userid"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/myfile_img_userid"
+            android:layout_weight="0.01"
+            app:srcCompat="@drawable/myfile_id"
+            android:layout_height="30dip"
+            android:layout_width="30dip"
+            android:layout_marginStart="28dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/myfile_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/myfile_text_id"
+            android:textSize="18sp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_line"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_myfile__line5"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

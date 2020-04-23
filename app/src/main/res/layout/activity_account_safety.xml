@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bigtalk.bigtalk.myspace.settings.AccountSafetyActivity"
+    tools:background="@color/common_background">
+
+    <include layout="@layout/include_navi"/>
+
+    <LinearLayout
+        android:id="@+id/acc_safe_layout_userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="@dimen/margin_30"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingTop="@dimen/fixed_height_bottom_padding"
+        android:paddingBottom="@dimen/fixed_height_bottom_padding">
+
+        <TextView
+            android:id="@+id/acc_safe_label_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/acc_safe_text_userid"
+            android:textColor="@color/base_color_text_black" />
+
+        <TextView
+            android:id="@+id/acc_safe_text_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/color_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acc_safe_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="@dimen/margin_30"
+        android:paddingTop="@dimen/fixed_height_bottom_padding"
+        android:paddingBottom="@dimen/fixed_height_bottom_padding"
+        android:paddingStart="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/acc_safe_label_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/acc_safe_text_email"
+            android:textColor="@color/base_color_text_black"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/acc_safe_text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:text="Textvie" />
+
+        <Button
+            android:id="@+id/acc_safe_btn_email"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_text_attach"
+            android:background="@drawable/button_em2full_selector"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_5"
+            android:paddingBottom="@dimen/margin_5"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/acc_safe_layout_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/acc_safe_label_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/acc_safe_text_mobile"
+            android:textColor="@color/base_color_text_black" />
+
+        <TextView
+            android:id="@+id/acc_safe_text_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/acc_safe_btn_mobile"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_em2full_selector"
+            android:text="@string/btn_text_attach"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_5"
+            android:paddingBottom="@dimen/margin_5"
+            android:textColor="?attr/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/acc_safe_text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/acc_safe_text_password"
+            android:background="@android:color/background_light"
+            android:textColor="@color/base_color_text_black" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bigtalk.bigtalk.myspace.settings.AttachMobileActivity"
+    android:background="@color/common_background">
+
+    <include layout="@layout/include_navi"/>
+
+    <LinearLayout
+        android:id="@+id/attach_mobile_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="@dimen/margin_30"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_5">
+
+        <TextView
+            android:id="@+id/attach_mobile_old_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/attach_mobile_text_label"
+            android:textColor="@color/base_color_text_black" />
+
+        <TextView
+            android:id="@+id/attach_mobile_old_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attach_mobile_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_5">
+
+
+        <EditText
+            android:id="@+id/attach_mobile_new_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="请输入新手机号"
+            android:inputType="number"
+            android:textColor="@color/base_color_text_black" />
+
+        <Button
+            android:id="@+id/attach_mobile_btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_text_verify_code"
+            android:background="@drawable/button_em2full_selector"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attach_mobile_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_light"
+        android:paddingStart="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10">
+
+
+        <EditText
+            android:id="@+id/attach_mobile_verify_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColor="@color/base_color_text_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light">
+
+        <Button
+            android:id="@+id/attach_mobile_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_text_confirm"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

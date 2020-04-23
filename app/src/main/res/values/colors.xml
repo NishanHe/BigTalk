@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#cddc39</color>
+    <color name="base_color_text_white">#ffffff</color>
+
+    <color name="blueText">#1485C6</color>
+    <color name="blueIndexStatus">#67A5EF</color>
+    <color name="blueStatus">#1680e2</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#424242</color>
+    <color name="red">#FFD4212A</color>
+    <color name="grey">#8C8C8C</color>
+    <color name="line">#EEEEEE</color>
+    <color name="background">#F9F9FA</color>
+
+    <color name="greyBackground">#cfcfcf</color>
+
+    <color name="button_press">#a0b1b9</color>
+    <color name="base_color_text_black">#3e3e39</color>
+
+    <color name="color_emote_divder">#ffa1a1a1</color>
+    <color name="color_line">#dadada</color>
+
+    <color name="color_1e1e1e">#1e1e1e</color>
+    <color name="color_b4">#b4b4b4</color>
+    <color name="color_99">#999999</color>
+    <color name="base_bg">#e2e5e5</color>
+    <color name="color_msg_system_time_bg">#20000000</color>
+    <color name="color_text_settings">#505050</color>
+
+    <color name="gray">#737373</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="color_navi_origin">#8e8e8e</color>
+
+    <color name="color_chat_send_status">#818181</color>
+    <color name="text_black_color">#333333</color>
+    <color name="cs_evaluate_dialog_divider">#eceef3</color>
+    <color name="cs_evaluate_text_color">#3c4d65</color>
+    <color name="cs_evaluate_edittext_textcolor">#939dab</color>
+
+    <color name="rc_text_color_secondary_inverse">@android:color/white</color>
+    <color name="de_title_bg">#0195ff</color>
+    <color name="cs_evaluate_edittext_background">#f1f3f5</color>
+    <color name="seal_bg">#f0f0f6</color>
+    <color name="cs_evaluate_bottom_text_backgroud">#0e8cea</color>
+    <color name="cs_evaluate_text_selected">#4D8DF0</color>
+    <color name="cs_evaluate_text_unselected">#939DAB</color>
+    <color name="cs_evaluate_text_border">#B4BDCB</color>
+    <color name="cs_evaluate_text_border_hover">#91BCFF</color>
+    <color name="press">#e8e8e8</color>
+
+
+    <color name="cs_evaluate_background_selected">#E3EEFF</color>
+    <color name="common_background">#e5e5e5</color>
+
+    <color name="yellow_button_press">#cccc66</color>
+</resources>

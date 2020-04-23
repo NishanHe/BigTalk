@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bigtalk.bigtalk.myspace.VRegisterActivity">
+
+    <include layout="@layout/include_navi"/>
+    <TextView
+        android:id="@+id/v_text_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/v_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_text_notification"
+        android:text="@string/v_text_title" />
+
+    <EditText
+        android:id="@+id/v_edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_size_large"
+        android:layout_below="@+id/v_text_title"
+        android:ems="10"
+        android:hint="@string/v_edit_hint_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/v_edit_idcard"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_size_large"
+        android:layout_below="@+id/v_edit_name"
+        android:ems="10"
+        android:hint="@string/v_edit_hint_idcard"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/v_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_edit_idcard"
+        android:text="@string/btn_text_next" />
+
+
+</RelativeLayout>

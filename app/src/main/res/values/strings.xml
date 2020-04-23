@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">BigTalk</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="startCon">我要开战</string>
+    <string name="me_topics">我关注的话题</string>
+    <string name="me_debater">我关注的辩手</string>
+    <string name="filter">筛选</string>
+    <string name="status_con">正火热开战</string>
+    <string name="join">参战</string>
+    <string name="watch">观战</string>
+    <string name="pickTime">请选择日期：</string>
+    <string name="pickArea">请选择领域：</string>
+    <string name="loading">加载中…</string>
+    <string name="notice">重要公告</string>
+    <string name="topic_intro">论题介绍</string>
+    <string name="tv_posiJoined">已报名正方选手</string>
+    <string name="tv_negaJoined">已报名反方选手</string>
+    <string name="btn_posi1">正方一辩</string>
+    <string name="btn_posi2">正方二辩</string>
+    <string name="btn_posi3">正方三辩</string>
+    <string name="btn_posi4">正方四辩</string>
+    <string name="btn_nega1">反方一辩</string>
+    <string name="btn_nega2">反方二辩</string>
+    <string name="btn_nega3">反方三辩</string>
+    <string name="btn_nega4">反方四辩</string>
+    <string name="label_countDown">倒计时：</string>
+    <string name="label_posi">正方</string>
+    <string name="label_nega">反方</string>
+    <string name="label_posi_1" translatable="false">正方一辩：</string>
+    <string name="label_nega_1" translatable="false">反方一辩</string>
+    <string name="btn_mic">结束发言</string>
+    <string name="btn_chat">进入聊天室</string>
+    <string name="confirm_register">确认报名？</string>
+    <string name="label_cancelRegister">我再想想</string>
+    <string name="label_register">我是认真的</string>
+    <string name="joinSuccess">报名成功！请准时参加比赛！</string>
+    <string name="label_hints_vote">请选出两个你心目中的最佳辩手</string>
+    <string name="btn_submit_vote">支持他们</string>
+    <string name="debaterVoterCallBack">感谢参与，请到我参与的辩论中进行结果查看</string>
+    <string name="confirm">确认</string>
+    <string name="hint_vote">请从以下五个方面对本场比赛双方进行评价</string>
+    <string name="label_cri1">审题</string>
+    <string name="label_cri2">论证</string>
+    <string name="label_cri3">辩驳</string>
+    <string name="label_cri4">配合</string>
+    <string name="label_cri5">辩风</string>
+    <string name="rdo_front_label">首页</string>
+    <string name="rdo_latest_label">最新</string>
+    <string name="rdo_debate_label">辩</string>
+    <string name="rdo_my_label">我的</string>
+    <string name="stop">暂停</string>
+    <string name="replay">重播</string>
+    <string name="play_btn_text_debate">查看文字版辩论</string>
+    <string name="play_btn_report">查看比赛报告</string>
+
+
+    <string-array name="ptnType">
+        <item>价值辩题</item>
+        <item>事实辩题</item>
+        <item>政策辩题</item>
+    </string-array>
+
+    <!-- AccountSafetyActivity -->
+    <string name="acc_safe_text_userid">当前用户账户</string>
+    <string name="acc_safe_text_email">邮箱地址</string>
+    <string name="acc_safe_text_mobile">手机号</string>
+    <string name="acc_safe_text_password">修改账户密码</string>
+
+    <string name="attach_mobile_text_label">已绑定手机</string>
+
+    <!-- Button -->
+    <string name="btn_text_start">开始</string>
+    <string name="btn_text_next">下一步</string>
+    <string name="btn_text_confirm">确定</string>
+    <string name="btn_text_submit">提交</string>
+    <string name="btn_text_attach">立即绑定</string>
+    <string name="btn_text_verify_code">获取验证码</string>
+    <string name="btn_text_finish">完成</string>
+    <string name="btn_text_back">返回</string>
+
+    <!-- Dialog -->
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_confirm">确定</string>
+
+
+    <!-- MessageNoteActivity -->
+    <string name="msg_note_text_accept_note">接受新消息通知</string>
+    <string name="msg_note_text_sound">声音</string>
+    <string name="msg_note_text_vib">振动</string>
+
+    <!-- VRegisterActivity -->
+    <string name="v_text_title">请进行实名认证</string>
+    <string name="v_edit_hint_name">请输入您的姓名</string>
+    <string name="v_edit_hint_idcard">请输入您的身份证号</string>
+
+
+    <string name="v_field_btn_society">社会</string>
+    <string name="v_field_btn_entertain">娱乐</string>
+    <string name="v_field_btn_science">自然科学</string>
+    <string name="v_field_btn_computer">计算机</string>
+    <string name="v_field_btn_humanity">人文</string>
+    <string name="v_field_btn_debater">辩手</string>
+    <string name="v_field_btn_critic">评论家</string>
+
+    <!-- UserActivity -->
+    <string name="user_text_contest_watched">TA旁观的辩论</string>
+    <string name="user_text_news_release">TA发布的内容</string>
+    <string name="user_text_collect">TA的收藏</string>
+    <string name="user_text_add_follow_no">添加关注</string>
+    <string name="user_text_add_follow_yes">已关注</string>
+
+    <!--DetailForLatestActivity-->
+    <string name="like">赞</string>
+    <string name="collect">收藏</string>
+    <string name="comment">评论</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_text_account_safety">账号与安全</string>
+    <string name="settings_text_message_note">新消息通知</string>
+    <string name="settings_text_language">多语言</string>
+    <string name="settings_text_download">2G/3G/4G 播放下载</string>
+    <string name="settings_text_cache_clear">清除缓存</string>
+    <string name="settings_text_check_latest">检查更新</string>
+    <string name="settings_text_about_us">关于我们</string>
+    <string name="settings_text_feedback">意见反馈</string>
+    <string name="settings_text_logout">退出</string>
+
+    <!-- Chat -->
+    <string name="longclick_speak">长按说话</string>
+    <string name="voice_up_tips">手指上滑,取消发送</string>
+    <string name="voice_short_tips">录音时间太短</string>
+    <string name="voice_cancel_tips">松开手指，取消发送</string>
+    <string name="picture">照片</string>
+    <string name="camera">拍摄</string>
+    <string name="new_come_group">加入该群</string>
+
+    <!-- MyFragment -->
+    <string name="myfrag_text_debate">辩论</string>
+    <string name="myfrag_text_follow">关注</string>
+    <string name="myfrag_text_fan">粉丝</string>
+
+    <string name="myfrag_text_contest_attended">我参加的辩论</string>
+    <string name="myfrag_text_news_release">我发布的内容</string>
+    <string name="myfrag_text_collect">我的收藏</string>
+    <string name="myfrag_text_vregister">达人认证</string>
+
+    <!-- EditMyFileActivity -->
+    <string name="myfile_edit_username">用户名</string>
+    <string name="myfile_rbtn_gender_f">女</string>
+    <string name="myfile_rbtn_gender_m">男</string>
+    <string name="myfile_edit_field">所在行业</string>
+    <string name="myfile_edit_signature">一句话介绍自己</string>
+    <string name="myfile_text_id">用户id</string>
+
+
+    <!-- Frontpage -->
+    <string name="frame_contest_attended">比赛</string>
+    <string name="frame_news_released">全部</string>
+    <string name="frame_collect">关注</string>
+
+    <string name="frame_contest_report">过往比赛</string>
+    <string name="frame_news_topic">新论题介绍</string>
+    <string name="frame_current_event">时事辩论</string>
+    <string name="frame_debate_technique">辩论技巧</string>
+
+    <string name="released_frame_news">动态</string>
+    <string name="released_frame_topic">辩题</string>
+
+    <!-- Release -->
+    <string name="release_news">发布动态</string>
+    <string name="release_topic">发布辩题</string>
+    <string name="release_news_title">请输入标题</string>
+    <string name="release_news_content">请输入内容</string>
+
+    <string name="release_news_userNews">用户发布</string>
+
+    <string name="release_topic_topicname">请输入辩题</string>
+    <string name="release_topic_posi">正方立场</string>
+    <string name="release_topic_nega">反方立场</string>
+
+    <!-- Topic type -->
+    <string name="topic_type_fact">事实辩题</string>
+    <string name="topic_type_value">价值辩题</string>
+    <string name="topic_type_politic">政策辩题</string>
+
+    <!-- Login Register changepass forget pass -->
+
+    <string name="login_forget_psw">忘记密码</string>
+    <string name="login_register">去注册</string>
+    <string name="register_hint_name">请输入用户名</string>
+
+    <string name="register_hint_pass">请输入密码</string>
+    <string name="register_hint_repass">请再次输入密码</string>
+    <string name="register_hint_phone">请输入手机号</string>
+    <string name="register_hint_code">请输入验证码</string>
+
+    <string name="reset_hint_psw_origin">请输入原密码</string>
+    <string name="reset_hint_psw_new">请输入新密码</string>
+    <string name="reset_hint_psw_new_again">请确认密码</string>
+
+    <!-- Train Progress -->
+    <string name="train_progress_topic">选择辩题</string>
+    <string name="train_progress_side">正反方</string>
+    <string name="train_progress_part">总起/总结</string>
+    <string name="train_choose_side_label">请选择正方或者反方进行作答</string>
+    <string name="train_choose_side_label_topicintro">辩题介绍</string>
+    <string name="train_choose_part_label">请选择立论或者总结陈词进行作答</string>
+    <string name="train_choose_side_posi">正方</string>
+    <string name="train_choose_side_nega">反方</string>
+    <string name="train_choose_part_start">我要立论</string>
+    <string name="train_choose_part_end">我要总结</string>
+
+    <!-- Train -->
+    <string name="train_totaltime_label">总时间：</string>
+    <string name="train_totaltime">3：00</string>
+    <string name="train_hint">按住说话</string>
+    <string name="train_finish">结束发言</string>
+
+    <!-- Train Finish-->
+    <string name="train_finish_label_congratulation">恭喜你！完成了本次训练</string>
+    <string name="train_finish_label_score">你的得分是</string>
+    <string name="train_finish_label_hint">小提示</string>
+
+
+    <!-- Contest Report Activity-->
+    <string name="contest_report_label_posi">正方</string>
+    <string name="contest_report_label_nega">反方</string>
+    <string name="contest_report_colon">：</string>
+    <string name="contest_report_label_winner">胜</string>
+    <string name="contest_report_label_mvp">最佳辩手</string>
+    <string name="contest_report_label_free_debate1">在自由辩论中</string>
+    <string name="contest_report_label_free_debate2">发言最多</string>
+    <string name="contest_report_label_active_before1">在赛前准备中</string>
+    <string name="contest_report_label_active_before2">准备最积极</string>
+    <string name="contest_report_label_audience_peek1">在比赛进行了</string>
+    <string name="contest_report_label_audience_peek2">分钟时，观众人数最多</string>
+
+
+    <!--时间-->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="yesterday">昨天</string>
+
+    <string name="time_just">刚刚</string>
+    <string name="time_minutes_age">分钟前</string>
+    <string name="time_hours_age">小时前</string>
+    <string name="time_before_yesterday">前天</string>
+
+    <string name="contact_notification_someone_agree_your_request">%1$s has accepted your friend request.</string>
+
+    <string name="contact_notification_agree_your_request">The other has agreed your friend request.</string>
+
+    <string name="de_dialog_item_message_delete">message delete</string>
+    <string name="network_not_available">The network is not available! Please check your network.</string>
+    <string name="fr_chat_room_join_failure">Oops! Something went wrong! Joining failed. </string>
+    <string name="de_actionbar_sub_defult">会话 </string>
+    <string name="cs_evaluate_problem_title">存在哪些问题</string>
+    <string name="cs_evaluate_select_must">必选</string>
+    <string name="cs_evaluate_tag_must">必须选择标签</string>
+    <string name="cs_evaluate_input_must">必须输入建议</string>
+    <string name="cs_evaluation">评价</string>
+    <string name="cs_evaluate_resolved">已解决</string>
+    <string name="cs_evaluate_unresolved">未解决</string>
+    <string name="cs_evaluate_star_title">请您对客服进行评价</string>
+    <string name="cs_submit_evaluation">提交评价</string>
+    <string name="cs_evaluate_resolved_title">请问客服是否解决了您的问题</string>
+    <string name="temp1">反方</string>
+    <string name="temp2">正方</string>
+    <string name="rdo_contest_label">赛场</string>
+    <string name="rdo_chat_label">聊天</string>
+    <string name="rdo_attended_label">我的比赛</string>
+    <string name="choosePosi">选位</string>
+
+
+</resources>

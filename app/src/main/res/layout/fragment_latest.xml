@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.bigtalk.bigtalk.latest.LatestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<SearchView-->
+            <!--android:id="@+id/latest_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:background="@color/cardview_light_background" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/latest_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/latest_rd_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_30"-->
+        <!--android:layout_alignBottom="@+id/latest_search"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/latest_rd_contest_report"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:text="@string/frame_contest_report" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/latest_rd_debate_technique"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:text="@string/frame_debate_technique" />-->
+
+
+        <!--</RadioGroup>-->
+
+        <Button
+            android:id="@+id/latest_btn_contest_report"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:scaleType="matrix"
+            android:text="@string/frame_contest_report"
+            android:textColor="@drawable/btn_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/latest_btn_debate_technique"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:background="@color/transparent"
+            android:scaleType="matrix"
+            android:text="@string/frame_debate_technique"
+            android:textColor="@drawable/btn_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/latest_button_group"
+        android:background="@color/greyBackground" />
+    <FrameLayout
+        android:id="@+id/latest_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/latest_button_group"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/latest_button_group"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/latest_rlAddBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/latest_ll01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/latest_miniFab01"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:text="@string/release_news"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/latest_miniFab01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/release_news"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="5dp"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/latest_ll02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/latest_ll01"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/latest_miniFab02"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:text="@string/release_topic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/latest_miniFab02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/release_topic"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="5dp"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/latest_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/plus" />
+</RelativeLayout>

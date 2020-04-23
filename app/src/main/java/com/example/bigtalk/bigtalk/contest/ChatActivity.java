@@ -1,0 +1,15 @@
+package com.example.bigtalk.bigtalk.contest;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.example.bigtalk.bigtalk.R;
+
+public class ChatActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_chat);
+    }
+}

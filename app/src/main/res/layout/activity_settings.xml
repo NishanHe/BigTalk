@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bigtalk.bigtalk.myspace.settings.SettingsActivity">
+
+    <include layout="@layout/include_navi"/>
+
+    <TextView
+        android:id="@+id/set_text_account_safety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_account_safety"
+        android:textColor="@color/color_text_settings" />
+
+    <TextView
+        android:id="@+id/set_text_message_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_message_note"
+        android:textColor="@color/color_text_settings"/>
+
+    <TextView
+        android:id="@+id/set_text_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_language"
+        android:textColor="@color/color_text_settings" />
+
+    <LinearLayout
+        android:id="@+id/set_layout_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/set_text_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:layout_weight="1"
+            android:text="@string/settings_text_download"
+            android:textColor="@color/color_text_settings"/>
+
+        <Switch
+            android:id="@+id/set_swc_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/set_text_cache_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_cache_clear"
+        android:textColor="@color/color_text_settings"/>
+
+    <TextView
+        android:id="@+id/set_text_check_latest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_check_latest"
+        android:textColor="@color/color_text_settings"/>
+
+    <TextView
+        android:id="@+id/set_text_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_about_us"
+        android:textColor="@color/color_text_settings"/>
+
+    <TextView
+        android:id="@+id/set_text_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/settings_text_feedback"
+        android:textColor="@color/color_text_settings"/>
+
+    <TextView
+        android:id="@+id/set_text_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal"
+        android:text="@string/settings_text_logout"
+        android:textColor="@android:color/holo_red_dark" />
+
+</LinearLayout>

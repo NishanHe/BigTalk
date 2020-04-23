@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.example.bigtalk.bigtalk.frontpage.fourFragments.FrontFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="4dp">-->
+
+        <!--<SearchView-->
+            <!--android:id="@+id/front_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/cardview_light_background" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_textview_time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/front_rd_group"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_30"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/front_rd_contest_attended"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:text="@string/frame_contest_attended" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/front_rd_news_released"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:text="@string/frame_news_released" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/front_rd_collect"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:button="@null"-->
+        <!--android:text="@string/frame_collect" />-->
+        <!--</RadioGroup>-->
+
+        <!--<Button-->
+        <!--android:id="@+id/front_btn_contest_attended"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:gravity="center_vertical|center_horizontal"-->
+        <!--android:paddingBottom="7dip"-->
+        <!--android:paddingTop="2dip"-->
+        <!--android:scaleType="matrix"-->
+        <!--android:text="@string/frame_contest_attended"-->
+        <!--android:textColor="@drawable/btn_text"-->
+        <!--android:textSize="14sp" />-->
+
+
+        <Button
+            android:id="@+id/front_btn_news_released"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:text="@string/frame_news_released"
+            android:textColor="@drawable/btn_text"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/front_btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingBottom="7dip"
+            android:paddingTop="2dip"
+            android:scaleType="matrix"
+            android:text="@string/frame_collect"
+            android:textColor="@drawable/btn_text"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <!--<ImageView-->
+        <!--android:id="@+id/front_tab_bottom"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="4dp"-->
+        <!--android:scaleType="matrix"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--android:layout_below="@+id/ll_textview_time"/>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/ll_textview_time"
+        android:background="@color/greyBackground" />
+    <FrameLayout
+        android:id="@+id/front_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_textview_time"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+    </FrameLayout>
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/front_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ll_textview_time"-->
+        <!--android:layout_weight="1" />-->
+
+    <RelativeLayout
+        android:id="@+id/rlAddBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@+id/miniFab01"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:text="@string/release_news"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/miniFab01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/release_news"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="5dp"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll01"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@+id/miniFab02"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingBottom="5dp"
+                android:text="@string/release_topic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/miniFab02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/release_topic"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="5dp"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/front_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/plus" />
+
+</RelativeLayout>

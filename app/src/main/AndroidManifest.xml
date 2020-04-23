@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bigtalk.bigtalk">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FrameActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".contest.UserJoinContestActivity" />
+        <activity android:name=".contest.TopicsIntroActivity" />
+        <activity android:name=".contest.WatchContestActivity" />
+        <activity android:name=".contest.ContestINGActivity" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".contest.vote.ParticipantsVoteActivity" />
+        <activity android:name=".contest.vote.AudienceVoteActivity" />
+        <activity android:name=".myspace.MyAttenedDebateActivity" />
+        <activity android:name=".contest.vote.PositionActivity" />
+        <activity android:name=".ConversationActivity" />
+        <activity android:name=".contest.UserJoinContestSuccessActivity" />
+        <activity android:name=".contest.vote.ExpertVoteActivity" />
+        <activity android:name=".latest.DetailsForLatestActivity" />
+        <activity android:name=".chat.base.BaseActivity" />
+        <activity android:name=".myspace.MyFollowActivity" />
+        <activity android:name=".myspace.UserActivity" />
+        <activity android:name=".myspace.EditMyFileActivity" />
+        <activity android:name=".myspace.MyCollectActivity" />
+        <activity android:name=".myspace.MyFanActivity" />
+        <activity android:name=".myspace.MyReleasedActivity" />
+        <activity android:name=".myspace.VChooseFieldActivity" />
+        <activity android:name=".myspace.VRegisterActivity" />
+        <activity android:name=".myspace.release.ReleaseNewsActivity" />
+        <activity android:name=".myspace.release.ReleaseTopicActivity" />
+        <activity android:name=".myspace.release.ReleaseSelectActivity" />
+        <activity android:name=".tools.ForgetPswActivity" />
+        <activity android:name=".tools.LoginActivity" />
+        <activity android:name=".tools.RegisterActivity" />
+        <activity android:name=".tools.ResetPswActivity" />
+        <activity android:name=".contest.PlayContestActivity" />
+        <activity android:name=".tools.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contest.ChatActivity" />
+        <activity android:name=".train.TrainActivity" />
+        <activity android:name=".train.TrainChooseSideActivity" />
+        <activity android:name=".train.TrainChoosePartActivity" />
+        <activity android:name=".train.TrainFinishActivity" />
+        <activity android:name=".latest.ContestReportActivity" />
+        <activity android:name=".train.ExhibitSampleActivity" />
+        <activity android:name=".latest.TextContestActivity"></activity>
+    </application>
+
+</manifest>

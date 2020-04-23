@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context="com.example.bigtalk.bigtalk.contest.ContestFragment">
+
+
+    <EditText
+        android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint="选择日期"
+        android:inputType="none"
+        android:textSize="14sp"></EditText>
+
+    <Spinner
+        android:id="@+id/spi_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pickDate"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp" />
+
+
+    <!--<DatePicker-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/datePicker"-->
+    <!--android:calendarViewShown="false"-->
+    <!--android:datePickerMode="spinner"-->
+    <!--tools:layout_height="wrap_content" />-->
+
+
+
+
+    <CheckBox
+        android:text="@string/me_debater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/if_me_debaters"
+        android:checked="false"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/pickDate"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignStart="@+id/if_me_debaters"
+        android:layout_alignTop="@+id/spi_field"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button_em2full_selector"
+        android:text="@string/filter"
+        android:textColor="@color/colorPrimary" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/contest_swrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/if_me_debaters"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_contest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

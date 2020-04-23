@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_participants_vote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="com.example.bigtalk.bigtalk.contest.vote.ParticipantsVoteActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/label_hints_vote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_hints_vote"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/myspace_n"
+            android:id="@+id/iv_posi"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/label_posi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_posi"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@mipmap/myspace_p"
+            android:id="@+id/iv_nega"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/label_nega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_nega"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:text="@string/btn_posi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_posi_1" />
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_posi_1"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:checkMarkTint="@color/blueStatus"
+                android:checkMarkTintMode="multiply" />
+
+            <TextView
+                android:text="@string/label_nega_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_nega_1"
+                android:layout_marginStart="15dp" />
+
+            <CheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_nega_1"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:text="@string/btn_posi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_posi_2" />
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_posi_2"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:text="@string/btn_nega2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_nega_2"
+                android:layout_marginStart="15dp" />
+
+            <CheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_nega_2"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:text="@string/btn_posi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_posi_3" />
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_posi_3"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp" />
+
+            <TextView
+                android:text="@string/btn_nega3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_nega_3"
+                android:layout_marginStart="15dp" />
+
+            <CheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_nega_3"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:text="@string/btn_posi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_posi_4" />
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_posi_4"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:ellipsize="marquee" />
+
+            <TextView
+                android:text="@string/btn_nega4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_nega_4"
+                android:layout_marginStart="15dp" />
+
+            <CheckedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cv_nega_4"
+                android:checked="false"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:clickable="true"
+                android:focusable="true"
+                android:drawablePadding="5dp"
+                android:textSize="14sp" />
+        </TableRow>
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+           <!---->
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+           <!---->
+
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+            <!---->
+        <!--</TableRow>-->
+
+
+        <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+           <!---->
+        <!--</TableRow>-->
+
+    </TableLayout >
+
+    <Button
+        android:text="@string/btn_submit_vote"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:background="@drawable/button_full_selector"
+        android:textColor="@color/base_color_text_white"
+        android:elevation="2dp"
+        android:layout_width="150dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="50dp" />
+</LinearLayout>
